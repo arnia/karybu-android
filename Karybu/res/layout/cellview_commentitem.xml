@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/TEXTYLE_COMMENTS_PUBLISH"
+        style="@style/round_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/publish_comment" />
+
+    <Button
+        android:id="@+id/TEXTYLE_COMMENTS_DELETE"
+        style="@style/round_button"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TEXTYLE_COMMENTS_PUBLISH"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/TEXTYLE_COMMENTS_NICKNAMETEXTVIEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:text="Nickname"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TEXTYLE_COMMENTS_CONTENT"
+        android:layout_width="wrap_content"
+        android:text="Comment"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TEXTYLE_COMMENTS_NICKNAMETEXTVIEW"
+        android:layout_toLeftOf="@+id/TEXTYLE_COMMENTS_DELETE" />
+
+</RelativeLayout>
